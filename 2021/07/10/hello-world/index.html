@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width">
@@ -14,22 +14,22 @@
 
 <link rel="stylesheet" href="/css/main.css">
 
-
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Uchen:300,300italic,400,400italic,700,700italic%7CUchenhex:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<meta name="description" content="Welcome to my blog, please enter password to read.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World">
 <meta property="og:url" content="http://example.com/2021/07/10/hello-world/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="My Diary">
+<meta property="og:description" content="Welcome to my blog, please enter password to read.">
+<meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-07-10T11:04:55.556Z">
-<meta property="article:modified_time" content="1985-10-26T08:15:00.000Z">
-<meta property="article:author" content="John Doe">
+<meta property="article:modified_time" content="2021-07-15T07:25:47.145Z">
+<meta property="article:author" content="cyan">
 <meta name="twitter:card" content="summary">
 
 
@@ -37,12 +37,14 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/2021/07/10/hello-world/","path":"2021/07/10/hello-world/","title":"Hello World"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"http://example.com/2021/07/10/hello-world/","path":"2021/07/10/hello-world/","title":"Hello World"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hello World | Hexo</title>
+<title>Hello World | My Diary</title>
   
 
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?2570ebc103845c4c1855625472ef9929"></script>
 
 
 
@@ -58,7 +60,10 @@
     <header class="header" itemscope itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-container">
   <div class="site-nav-toggle">
-    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
@@ -66,22 +71,57 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Hexo</h1>
+      <h1 class="site-title">My Diary</h1>
       <i class="logo-line"></i>
     </a>
   </div>
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
 
 
 
+<nav class="site-nav">
+  <ul class="main-menu menu">
+        <li class="menu-item menu-item-home"><a href="/" rel="section">首页</a></li>
+        <li class="menu-item menu-item-tags"><a href="/tags" rel="section">标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="/categories" rel="section">分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="/archives" rel="section">归档</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
         
@@ -94,35 +134,37 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+    <div class="sidebar-inner sidebar-overview-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
-          Table of Contents
+          文章目录
         </li>
         <li class="sidebar-nav-overview">
-          Overview
+          站点概览
         </li>
       </ul>
 
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
           <div class="site-overview">
             <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">John Doe</p>
-  <div class="site-description" itemprop="description"></div>
+    <img class="site-author-image" itemprop="image" alt="cyan"
+      src="/images/%E9%9B%AA%E7%8B%90.jpg">
+  <p class="site-author-name" itemprop="name">cyan</p>
+  <div class="site-description" itemprop="description">It is a diary</div>
 </div>
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
           <a href="/archives">
+        
           <span class="site-state-item-count">1</span>
-          <span class="site-state-item-name">posts</span>
+          <span class="site-state-item-name">日志</span>
         </a>
       </div>
   </nav>
@@ -133,6 +175,10 @@
           </div>
         </div>
       </div>
+        <div class="back-to-top animated" role="button" aria-label="返回顶部">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
     </div>
   </aside>
   <div class="sidebar-dimmer"></div>
@@ -141,10 +187,6 @@
     </header>
 
     
-  <div class="back-to-top" role="button" aria-label="Back to top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
 
 <noscript>
   <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
@@ -161,17 +203,17 @@
   
   
 
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
     <link itemprop="mainEntityOfPage" href="http://example.com/2021/07/10/hello-world/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="John Doe">
-      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/%E9%9B%AA%E7%8B%90.jpg">
+      <meta itemprop="name" content="cyan">
+      <meta itemprop="description" content="It is a diary">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Hexo">
+      <meta itemprop="name" content="My Diary">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
@@ -184,19 +226,42 @@
       <span class="post-meta-item-icon">
         <i class="far fa-calendar"></i>
       </span>
-      <span class="post-meta-item-text">Posted on</span>
+      <span class="post-meta-item-text">发表于</span>
 
-      <time title="Created: 2021-07-10 19:04:55" itemprop="dateCreated datePublished" datetime="2021-07-10T19:04:55+08:00">2021-07-10</time>
+      <time title="创建时间：2021-07-10 19:04:55" itemprop="dateCreated datePublished" datetime="2021-07-10T19:04:55+08:00">2021-07-10</time>
     </span>
       <span class="post-meta-item">
         <span class="post-meta-item-icon">
           <i class="far fa-calendar-check"></i>
         </span>
-        <span class="post-meta-item-text">Edited on</span>
-        <time title="Modified: 1985-10-26 16:15:00" itemprop="dateModified" datetime="1985-10-26T16:15:00+08:00">1985-10-26</time>
+        <span class="post-meta-item-text">更新于</span>
+        <time title="修改时间：2021-07-15 15:25:47" itemprop="dateModified" datetime="2021-07-15T15:25:47+08:00">2021-07-15</time>
       </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+      </div>
+      <div class="post-meta">
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span></span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>NaN:aN</span>
+    </span>
 </div>
 
         </div>
@@ -206,20 +271,18 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
+        <div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="f9c934b8d0f66e934648eb9789dc356379506393ab2d45d604e8d08724762be5">eda57e9acee72ac0d866bf38b87518fc6238da79495e4863e39e2248213b4d30def984cc89a9eb31a97a54f4a60622587eda6ffb1fdd628107789d19829ccf9e8980dc813021de52a46a085cb443c493d4cc34695eea8011dfff223dcff4332c1ad93bc5baf13b0979f7dc89f8230429ef3bb1f850814feb3bdda8eb741b1fba166aac0f1f5c1c0c4c68a8a75927c64d2466d3c45f2c67693df8f9a21756e5b764281b33e2564f13a94fbdbc02c5c146e19539db440487f4b90b2428379624ffc85e58e420590e5f21596b636242c3f5e9fefbbf963e6683abdee32431c07dc931d2c6f1230ce314a62bbee251da9c699b9dbbcb0b74a6eb8ef8c66df650e0faa2a2dec2a592945e639f32f78a961f2c832740c0c00a4cc313a9451b95293aecdf0fddf75a3bbb203a504a7b48082efc8746f4bf1f3ceb91a3320067d8ab4660f9e5db81ec034eede34365116ec3e889e657c6af98e378918cb274a2a12b8dc0a73a3336771261f1f65d55df01d1499c08c1572d52a47a87e0c463fc7bd9c4e2a30ecc37467f8a46cb67622f8219d7fd69c1ae4ccd547945ffc12864a0227d723154383b78a46d20ad497afdde890a286be84c0eb931b6da586a398e3ef050ec7331529bfcb0f849a65aefaa05a6e89c3587b16b71cd4773fde737e9e0a8880a19ea1b3d954cf5a3ef31fec171abe5cfbdabfd9c4e980da9edb2bc625533ac6fc63bff97e8c6125a7c2707d6aceb08efc124c40c0b834d89c636245abc4a182e675ac2024799438f0bd65d9fe188e0cfd581c88a7287e99e8dc5b26db46849b8d1529fc0402021d2ca77923d40bb26bf91646150454a5d460af3c6a8e2c2e73f963099d484ab30377af0868c746749194cb8a4c73ce6fd193d9f7d4d217bf11fc3e2ac82a04eb3a466dddbaf687fe0ccbfef3c8f4e36bdb875209d951698f99f6fd4635ea7269f73b21a3b43dbc3fa90d172c32eb0ecfec2901634388f91bc958dc381b46eb2c92de41f60cb008d187d71e74f8ae7427e6eff07c415e0c56a19cc1e817b26602be0609079f499fa622552c42f240d9ddf0d98b2969fe6e3591ca2578307e00ef7b377aa359a770a70a0e4ea70c0ddf229ce12a5b62a89651dacc91f0e1ffffbe1a7b093ee49704af09b7ded847e5015440dad7d97d7024c227e0cb96d1a045199104c87fb58078dcf5f386c7de8ed0a5b5db9584eca51ee79b95d0212f7051e5b1a40d25535dbbb031b03057dcbf8754438dd7148ae44ad3791c9361ee51aa0a95aa1db949c53b9d33cc7608a2a7b9b068e8b5ef5718ab742eb07ee2637f639d1d0d3bc4ff29cc58e3641744ac039d22c1c04266aaf78b1301626e14d767b78d4395122f357a66d97fa294949dd6c321bfb661e95258c559b3db693ce8b530e7329fba931191b10528e512b34d7be3b62ab8a9968cb1fff6d800e2a88ce22d2fd4ee72de5195dea1ea36f34ff8f516c267bed32ca842061fbf1fe97b2e8ed11c5f5d5c360bd58ebbcc1934fe81e6041bbf59d7612aff04fb301a81ac832851ba0adb025ac6f048bc1a10ce49bfb89cac5b8c9f5ecb6caa68cfc2ead340b41d8a6c40b81dad6757ac69007d21f8b247e97d66f78908c0d02fee6c73c4529e5c5ea3d6ac21bf26263ea953c1dd271ce2dfb86e87f84f9ed07ecc4023f84a2ba473ca3078951c3aec6b44f3976a2d6995b60e6abb267bb885fb56795ef8a9435fd1ecd3a7246036f4450e4cda6d86adfd98b3926c76eb320b67d87a8b2021376c5d743564c109abd850641508a98d3d2c77b7a0563c5e1d8a723e6e124441dc290944630e74dbf2592c71c302b75b00392fc133c074491dd262c4c3e30912b40c5c816df5da81f0b4a8e26bbfc12e95ae37b8cea3e4840b858770aa5d052458e11f09bb4b09d6f92494988865025b422f0d5a3a72d951ef80729f1df956e96e5a33a4ddc5b9b9aafa55eabcb3581afeb4dd72445dbd8033fca348c1b9294f1a8ba0837458d6ca7bf6694d1a3bcc86cc859e9d42d2e1c24c5514018b733b1d6677fa8bd2caf365dcc99d2a0bdfe845a18344b30ceb55c495911f8810c98927fa2ff676f523b4cb9bdb483b1ceb457fdc084d5c55ed1a6de3411687b5e0ecf41f227c365a7faaa8e41cbc7e0418a849811156824aba8bd76ccc00ba0bc23289bf43540765922ab7a2a5e1b3d655ff9ec49b02aad4d45450529f678025869fca262250080b533e09c54011213b10acab2d8276ac536d799dfb690948cb45b1e3d3f3c29b63b15eeea5bbce69317b5e1ab495ff358039e3036741818e7c30be4f6739f528d0dbaadfe4a2bacd48f56a6dda5bc087fdad0ef8b0b546452b09f7da933bae35008541a46a16e71edc547a30075185bb3fe135cb0c297de796f61e3750584134743a91a0752a17240ad5dcb6e0436bca2aee49da5d0aba576d970b3fc3c9531d47dbc47175beb9a3fbd3c458c04fea43ad8ca9a4f2553db69efe7a2d316a661a3a44970b81d6b2806aee0d484a8c2b7873c5759e99c43655e77565740a65cfac225a210f76a7cada4b4086bd4cd003a6d11f998817504da79941b2c353dec17a9deaf9a62dab1c4731db8ada15d0a38c5a6dad7659087fe9cc511c3569c2962d9bf8ebdaf60a3f380f4d3b181ffabb47b3936c2ca8553048304e6560422165abc6bf8f2f4506c8531acd6ffecb07c3ebc01c2aaca4780486fb86da2bf7b54c5ed48efcd32564b9284bd5c0c35d44da121a077006d6a728c34697ef068efde0225c3ec0a00ed92a91ab9527faf48d0d6fb88921b598f3feb01d68134268f74e08c849c41c98f5d71c2cbebb06737daaff9160180ef3a69e7c399034cd4b532076710f7cb50363584f8d4cddde6c27c04d30978df4777e8847a9da73567ef668f04896559fcf286c635c301c4ce05571fba9ace4eeaa416d307fab1105f879bba705ec7225e7fe19b8ebb7f4731f6918f00c306c309d5147a7769a350c6efaef7cc5b5b96ff79b6155160016e13d5c75c980437f97fb5374cfd04700ce6f6b566d2d19448b6b468f4dca2da1104358ad77885a26a6a6fbe29184f1db1f4703751e91503619f63a4cfcf4192fee8c03fc43b4e8415d0a966d4abfd41b2b4dd47c43c61b717259548af9e</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">Hey, password is required here.</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css">
     </div>
 
     
@@ -227,6 +290,24 @@
     
 
     <footer class="post-footer">
+          <div class="reward-container">
+  <div></div>
+  <button>
+    赞赏
+  </button>
+  <div class="post-reward">
+      <div>
+        <img src="/images/alipay.jpg" alt="cyan 支付宝">
+        <span>支付宝</span>
+      </div>
+      <div>
+        <img src="/images/wechat.jpg" alt="cyan wechat">
+        <span>wechat</span>
+      </div>
+
+  </div>
+</div>
+
 
         
 
@@ -252,10 +333,40 @@
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">John Doe</span>
+  <span class="author" itemprop="copyrightHolder">cyan</span>
 </div>
-  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a>
-  </div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">NaNm</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">NaN:aN</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
 
     </div>
   </footer>
@@ -265,11 +376,13 @@
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script>
 
   
+<script src="/js/third-party/search/local-search.js"></script>
 
 
 
 
   
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 
 
 
